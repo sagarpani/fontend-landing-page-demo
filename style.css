@@ -518,3 +518,41 @@ main {
     outline-offset: 4px;
 }
 
+/* footer */
+
+.contact-section{
+    width: min(90% - 2rem, 1200px);
+    margin-inline: auto;
+
+    padding-block: 4rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.contact-section p{
+    margin-bottom: 0.5rem;
+
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 1.6;
+}
+
+.contact-section a {
+    color: rgba(255, 255, 255, 0.949);
+    text-decoration: none;
+
+    transition: color 180ms ease;
+}
+
+.contact-section a:hover,
+.contact-section a:focus-visible {
+    color: #ff9d4d;
+}
+
+.contact {
+    margin-right: 1rem;
+}
+
