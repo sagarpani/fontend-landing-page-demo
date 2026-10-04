@@ -450,3 +450,71 @@ main {
         grid-template-columns: 1fr;
     }
 }
+
+/* cta section */
+.cta-section{
+    min-height: 60vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding-block: 6rem;
+
+     background:
+        radial-gradient(
+            circle at center,
+            rgba(255, 120, 30, 0.08),
+            transparent 60%
+        );
+}
+
+.cta-section h2{
+    max-width: 700px;
+
+    margin-bottom: 1rem;
+
+    font-size: clamp(2.25rem, 5vw, 4rem);
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+}
+
+.cta-section p {
+    max-width: 600px;
+
+    margin-bottom: 1.75rem;
+
+    color: rgba(255, 255, 255, 0.68);
+    line-height: 1.7;
+}
+
+.cta-section a{
+    display: inline-block;
+
+    padding: 0.75rem 1.25rem;
+
+    color: #111;
+    background-color: #ff9d4d;
+
+      border-radius: 999px;
+
+    text-decoration: none;
+    font-weight: 600;
+
+    transition:
+        background-color 180ms ease,
+        transform 180ms ease;
+
+}
+
+.cta-section a:hover {
+    background-color: #ffb36f;
+    transform: translateY(-2px);
+}
+
+.cta-section a:focus-visible {
+    outline: 2px solid #ff9d4d;
+    outline-offset: 4px;
+}
+
