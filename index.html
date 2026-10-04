@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="This is a modern responsive landing page built to demonstrate html and css functionalities">
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="demorobo.jpg" type="image/x-icon">
+
+  <!-- canonical url -->
+  <!-- I implemented canonical URLs to establish a master version(primary page link) for duplicate pages. This guides search engine crawlers to the correct link, optimizes our crawl budget, and consolidates all link equity to prevent loss of SEO authority. -->
+  <link rel="canonical" href="https://landingpagedemolink.com">
+
+  <!-- Open graph metadata -->
+  <!-- I integrated Open Graph protocols to standardize programmatic previews for social sharing. Additionally, utilizing the og:url property allows us to consolidate social engagement metrics (like shares and likes) back to a single primary URL, preventing social media data fragmentation. -->
+  <meta property="og:title" content="Landing Page Demo">
+
+  <meta property="og:description"
+    content="This is a modern responsive landing page built to demonstrate html and css functionalities">
+
+  <meta property="og:image" content="https://landingpagedemolink.com/demorobo.jpg">
+
+  <meta property="og:url" content="https://landingpagedemolink.com">
+
+  <meta property="og:type" content="website">
+
+  <!-- External css -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- title -->
+  <title>Landing Page Demo</title>
+</head>
+
+<!-- I prioritized semantic markup across the codebase to optimize document structure and improve web accessibility (a11y). Utilizing purpose-driven elements allows browsers, screen readers, and SEO crawlers to instantly interpret the component layout, ensuring a highly machine-readable and standards-compliant interface. -->
+
+<body>
+  <header>
+    <nav class="navbar">
+      <a class="logo-container" href="#hero-section" aria-label="Go to homepage">
+
+        <p class="logo">Sagar</p>
+
+      </a>
+      <!-- I explicitly appended rel="noopener noreferrer" to all external target links to mitigate reverse tabnabbing vulnerabilities. This prevents newly opened tabs from executing malicious scripts on the parent window, securing our users' browsing sessions. -->
+      <ul class="link-container">
+        <li>
+          <a class="navlink" href="#hero-section">Home</a>
+        </li>
+        <li>
+          <a class="navlink" href="#features-section">About</a>
+        </li>
+        <li>
+          <a class="navlink" href="#projects-section">Projects</a>
+        </li>
+        <li>
+          <a class="navlink" href="#contact-section">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-section" id="hero-section">
+      <h1>Sagar Sekhar Pani</h1>
+      <p>
+        I'm a Python full-stack developer focused on building reliable web
+        applications with Python, React, and SQL.
+      </p>
+      <p>
+        I&#8217;m interested in what happens beyond the interface; how APIs are designed, how data flows through
+        a system, how databases are structured, how authentication works, and how engineering decisions affect
+        the reliability and maintainability of software.
+      </p>
+      <a href="Sagar Sekhar Pani - Python Full Stack Developer.pdf" download="Sagar_Sekhar_Pani_Resume"
+        class="cta-button">
+        Download Resume
+      </a>
+
+    </section>
+
+    <section class="features-section" id="features-section">
+      <h2>What I work with</h2>
+      <article class="feature-card">
+        <h3 class="feature-title">Frontend</h3>
+        <ul class="skill-set">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>Responsive Design</li>
+          <li>Accessibility</li>
+        </ul>
+      </article>
+
+      <article class="feature-card">
+        <h3 class="feature-title">Python</h3>
+        <ul class="skill-set">
+          <li>Python</li>
+          <li>Automation</li>
+          <li>Problem Solving</li>
+          <li>Backend Learning</li>
+        </ul>
+      </article>
+
+      <article class="feature-card">
+        <h3 class="feature-title">Engineering Mindset</h3>
+        <ul class="skill-set">
+          <li>Git/GitHub</li>
+          <li>Clean code</li>
+          <li>Learning through projects</li>
+          <li>Product thinking</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="projects-section" id="projects-section">
+      <h2>Projects</h2>
+      <article class="project-card">
+        <h3 class="project-title">
+          Frontend Landing Page Demo
+        </h3>
+
+        <ul class="project-skills">
+          <li>Portfolio</li>
+          <li>React</li>
+          <li>Tailwind</li>
+        </ul>
+
+        <p class="project-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta
+          consequatur cumque cupiditate adipisci, dolorem culpa magni minima iure fugit dolor?</p>
+
+        <a class="project-btn demo-btn" href="https://sagar-evolves-dev.vercel.app/" target="_blank"
+          rel="noopener noreferrer">
+          Live demo
+        </a>
+        <a class="project-btn github-btn" href="https://github.com/sagarpani/SagarEvolves.dev" target="_blank"
+          rel="noopener noreferrer">
+          GitHub
+        </a>
+
+      </article>
+
+      <article class="project-card">
+        <h3 class="project-title">
+          Commit
+        </h3>
+        <ul class="project-skills">
+          <li>Task management app</li>
+          <li>React</li>
+          <li>Context API</li>
+          <li>localStorage</li>
+        </ul>
+        <p>
+          Commit is a clean, modern todo application built with React and Tailwind CSS, focused on simplicity,
+          usability, and thoughtful state management. The application demonstrates how to build a fully
+          functional CRUD system using React Context API while maintaining a polished UI and smooth user
+          experience. It emphasizes separation of concerns, predictable state updates, and real-world UX
+          decisions like inline editing and persistent state.
+        </p>
+
+        <a class="project-btn demo-btn" href="https://commit-pi.vercel.app/" target="_blank" rel="noopener noreferrer">
+          Live demo
+        </a>
+        <a class="project-btn github-btn" href="https://github.com/sagarpani/Commit" target="_blank"
+          rel="noopener noreferrer">
+          GitHub
+        </a>
+
+      </article>
+
+      <article class="project-card">
+        <h3 class="project-title">
+          CurrencyLab
+        </h3>
+        <ul class="project-skills">
+          <li>Currency Converter</li>
+          <li>React</li>
+          <li>Custom Hooks</li>
+
+        </ul>
+        <p>
+          CurrencyLab is a modern, real-time currency converter built with React. It focuses on simplicity,
+          speed, and clean user experience while demonstrating strong fundamentals of state-driven UI and
+          custom hooks.
+        </p>
+
+        <a class="project-btn demo-btn" href="https://currency-lab.vercel.app/" target="_blank"
+          rel="noopener noreferrer">
+          Live demo
+        </a>
+        <a class="project-btn github-btn" href="https://github.com/sagarpani/currencyLab" target="_blank"
+          rel="noopener noreferrer">
+          GitHub
+        </a>
+
+      </article>
+
+
+    </section>
+
+    <section class="cta-section" id="cta-section">
+      <h2>
+        Let's build something useful.
+      </h2>
+      <p>I'm always interested in working on thoughtful products, interesting problems, and opportunities to keep
+        growing as an engineer.</p>
+
+      <a href="mailto:sagarpani22@gmail.com">Get in touch</a>
+    </section>
+  </main>
+
+  <footer class="contact-section" id="contact-section">
+    <p>Sagar Sekhar Pani</p>
+    <p>Python Full-Stack Developer</p>
+
+    <p>Building, learning, and shipping one project at a time.</p>
+
+    <div class="footer-contacts">
+      <a class="contact" href="https://github.com/sagarpani" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a class="contact" href="https://linkedin.com/in/sagarpani" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a class="contact" href="mailto:sagarpani22@gmail.com">Email</a>
+    </div>
+  </footer>
+</body>
+
+</html>
