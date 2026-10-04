@@ -126,6 +126,7 @@ main{
     margin-inline: auto
 }
 
+/* hero section */
 .hero-section{
     min-height: 85vh;
 
@@ -134,4 +135,29 @@ main{
     justify-content: center;
 
     padding-block: 5rem;
+}
+
+.hero-section h1{
+    margin-bottom: 1rem;
+}
+
+.hero-section p{
+    max-width: 700px;
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+.hero-section h1{
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    margin-bottom: 1.5rem;
+}
+
+.hero-section p:first-of-type{
+    font-size: 1.2rem;
+}
+
+.hero-section p:last-of-type{
+    color: rgba(255, 255, 255, 0.7);
 }
