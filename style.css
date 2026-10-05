@@ -1167,3 +1167,13 @@ main {
         padding: 0.5rem 0.75rem;
     }
 }
+
+@media (max-width: 400px) {
+
+    .link-container{
+        gap: 0.1rem;
+    }
+    .navlink{
+        font-size: 0.7em;
+    }
+}
